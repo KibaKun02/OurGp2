@@ -1,0 +1,180 @@
+*{
+padding: 0%;
+}
+body{
+    background:black;
+    
+}
+h1{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    animation: move 5s infinite ease-in-out alternate;
+    padding-left: 800px;
+}
+@keyframes move{
+    from{
+        right: 0px;
+    }
+    to{
+        right: 700px;
+    }
+}
+#con1{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    margin: 70px;
+    
+}
+#con2{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    margin: 70px;
+    
+}
+img{
+    border: 1px solid;
+    border-radius: 50%;
+    border: none;
+
+}
+#btn1{
+    background:linear-gradient(to bottom,pink,#F65A83);
+    
+}
+#btn2{
+    background:linear-gradient(to bottom,blue,#ECC9EE);
+}#btn3{
+    background:linear-gradient(to bottom,#C08261,orange);
+}#btn4{
+    background: linear-gradient(to bottom,#F31559,#FFECAF);
+}#btn5{
+    background:linear-gradient(to bottom,#279EFF,#D5FFD0) ;
+}#btn6{
+    background:linear-gradient(to bottom,#594099,#FE7BE5);
+}
+
+
+button{
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px 7px white;
+}
+button:active{
+    box-shadow: 0px 0px 8px 8px violet;
+}
+#mode{
+    position: absolute;
+    z-index: 1;
+    left:160rex;
+    top: 10px;
+}
+#mode #nightmode{
+    background-color: black;
+    color:white;
+    box-shadow: 0px 0px 3px 3px black;
+}
+#mode #daymode{
+    background-color: white;
+    color:black;
+    box-shadow: 0px 0px 3px 3px white;
+    border: none;
+}
+/* Universal Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Desktop Styles */
+body {
+    background: black;
+    font-size: 16px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding: 20px;
+    animation: move 5s infinite ease-in-out alternate;
+    padding-left: 800px;
+}
+
+#con1, #con2 {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    margin: 70px;
+}
+
+img {
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+button {
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px 7px white;
+}
+
+button:active {
+    box-shadow: 0px 0px 8px 8px violet;
+}
+
+#mode {
+    position: absolute;
+    z-index: 1;
+    left: 1100px;
+    top: 10px;
+}
+
+#mode #nightmode {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 3px 3px black;
+}
+
+#mode #daymode {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 3px 3px white;
+    border: none;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    body {
+        background: white; /* Change background to white for mobile */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust font size for mobile */
+        padding-left: 20px; /* Reduce left padding for mobile */
+    }
+
+    #con1, #con2 {
+        display: block; /* Change to block display for mobile */
+        padding: 20px; /* Increase padding for mobile */
+        margin: 20px auto; /* Center-align the containers */
+    }
+
+    img {
+        max-width: 100%; /* Ensure images don't exceed screen width on mobile */
+    }
+
+    button {
+        width: 80%; /* Make buttons take up 80% of the screen width on mobile */
+        margin: 10px auto; /* Center-align the buttons */
+    }
+
+    #mode {
+        left: 20px; /* Adjust position for mobile */
+        top: 20px; /* Adjust position for mobile */
+    }
+}
